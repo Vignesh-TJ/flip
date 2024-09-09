@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        nav{
+    width: 100%;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+}
+*{
+    font-family: "Roboto", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+span{
+    margin-left: 30px;
+}
+ li:first-child{
+    font-size: 20px;
+    text-decoration: bold;
+}
+.inner{
+    position:absolute;
+    background:white;
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid rgb(146, 142, 142);
+    border-radius: 5px;
+    margin-top: 10px;
+    visibility: hidden;
+
+}
+.topside ul li:first-child{
+   padding: 10px;
+}
+.topside ul li:first-child:hover{
+    background:blue;
+    color: white;
+    border-radius: 5px;
+
+
+}
+.topside ul li:first-child:hover .inner
+{
+    visibility: visible;
+    transition: 0.5s;
+
+}
+
+
+
+.inner li{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+}
+input{
+    width: 473.25px;
+   
+    background-color: rgba(228, 234, 234, 0.4);
+    border: none;
+    padding: 10px;
+height: 40px;
+font-size: large;
+color: black;
+border: 0px;
+border-radius: 0 10px 10px 0;
+}
+body{
+    background: #dad8d8;
+}
+.listitem{
+    display: inline-block;
+    margin-right: 70px;
+    font-size: 25px;
+    font-weight: 70px;
+}
+.listitem a{
+    text-decoration: none;
+    color: black;
+ 
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  padding: 0 20px;
+  padding-right: 0px;
+  background-color: rgba(228, 234, 234, 0.4);
+    font-size: 20px;
+}
+.topside>ul>li:hover{
+
+    color: white;
+}
+.listem:first-child a:hover{
+    color: white;
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gtGbYs4_0bT-3JBYKK4pFUnwqBwDtFwfUg&s">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="full">
+        <nav class="container-fluid">
+            <div class="logo"> <img width="160px" height="40px" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt=""></div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="search for products brands and more">
+            </div>
+            <div class="topside"> 
+                <ul>
+                    <li class="listitem"><a href=""><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Login</a>
+                    <ul class="inner">
+                        <li>new customer<span>register</span></li>
+                        <hr>
+                        <li>my proflile</li>
+                        <li>cart</li>
+                        <li>products</li>
+                        <li>brands</li>
+                        <li>whillist</li>
+                        
+                    </ul></li>
+                    <li class="listitem"><a href=""><i class="fa-solid fa-cart-shopping" style="margin-right: 5px;"></i>Cart</a></li>
+                    <li class="listitem"><a href=""><i class="fa-solid fa-shop" style="margin-right: 5px;"></i>Become a seller</a></li>
+                    <li class="listitem"><i style="font-size: 30px;" class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+</body>
+</html>
